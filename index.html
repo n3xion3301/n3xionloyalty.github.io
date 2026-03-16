@@ -3,70 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>n3xion Loyalty - Contact & Projects</title>
+    <title>n3xion - Anonymous Collective</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="matrix-bg"></div>
+    
     <div class="container">
-        <div class="card">
-            <div class="header">
-                <h1>n3xion</h1>
-                <p class="tagline">Loyalty is Everything</p>
-            </div>
-            
-            <div class="content">
-                <h2>Get in Touch</h2>
-                <p>Have a question or want to collaborate? Send me a message.</p>
-                
-                <form id="contactForm" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn">Send via Telegram</button>
-                </form>
-                
-                <div id="successMessage" class="success-message" style="display: none;">
-                    ✓ Message sent! Opening Telegram...
-                </div>
-                
-                <div id="errorMessage" class="error-message" style="display: none;">
-                    ✗ Error sending message. Please try again.
+        <div class="terminal">
+            <div class="terminal-header">
+                <span class="terminal-title">n3xion@collective:~$</span>
+                <div class="terminal-buttons">
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                    <span class="btn-close"></span>
                 </div>
             </div>
             
-            <div class="projects">
-                <h2>Projects</h2>
-                <div class="project-list">
-                    <a href="https://gitlab.com/n3xion3301/trackmissingprofile" class="project-link">
-                        <span class="project-name">TrackMissingProfile</span>
-                        <span class="project-desc">Tool to help bring missing persons home</span>
+            <div class="terminal-content">
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">whoami</span>
+                </div>
+                <div class="terminal-output">n3xion - Loyalty is Everything</div>
+                
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat mission.txt</span>
+                </div>
+                <div class="terminal-output">
+                    We are n3xion. We operate in the shadows.<br>
+                    Our mission: Help those the system has failed.<br>
+                    TrackMissingProfile - Finding the lost when authorities won't.<br>
+                    <span class="highlight">Loyalty is Everything.</span>
+                </div>
+                
+                <div class="contact-section">
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">send_message</span>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name"><span class="label-prefix">[*]</span> Identity</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email"><span class="label-prefix">[*]</span> Secure Channel</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message"><span class="label-prefix">[*]</span> Transmission</label>
+                            <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-send">TRANSMIT TO TELEGRAM</button>
+                    </form>
+                    
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <span class="status-icon">✓</span> Message encrypted and transmitted. Opening secure channel...
+                    </div>
+                    
+                    <div id="errorMessage" class="error-message" style="display: none;">
+                        <span class="status-icon">✗</span> Transmission failed. Retry?
+                    </div>
+                </div>
+                
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">ls projects/</span>
+                </div>
+                <div class="projects-section">
+                    <div class="project-item">
+                        <span class="project-icon">[>]</span>
+                        <a href="https://gitlab.com/n3xion3301/trackmissingprofile" target="_blank" class="project-link">
+                            TrackMissingProfile
+                        </a>
+                        <span class="project-status">ACTIVE</span>
+                    </div>
+                    <div class="project-item">
+                        <span class="project-icon">[>]</span>
+                        <a href="https://gitlab.com/n3xion3301/facebooktogglelink" target="_blank" class="project-link">
+                            FacebookToggleLink
+                        </a>
+                        <span class="project-status">ACTIVE</span>
+                    </div>
+                </div>
+                
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">connect</span>
+                </div>
+                <div class="connect-section">
+                    <a href="https://t.me/n3xion3301" target="_blank" class="connect-link">
+                        <span class="connect-icon">◆</span> Telegram
                     </a>
-                    <a href="https://gitlab.com/n3xion3301/facebooktogglelink" class="project-link">
-                        <span class="project-name">FacebookToggleLink</span>
-                        <span class="project-desc">Contact form for collaboration</span>
+                    <a href="https://gitlab.com/n3xion3301" target="_blank" class="connect-link">
+                        <span class="connect-icon">◆</span> GitLab
+                    </a>
+                    <a href="https://github.com/n3xion3301" target="_blank" class="connect-link">
+                        <span class="connect-icon">◆</span> GitHub
                     </a>
                 </div>
-            </div>
-            
-            <div class="footer">
-                <div class="social-links">
-                    <a href="https://t.me/n3xion3301" target="_blank" class="social-link">Telegram</a>
-                    <a href="https://gitlab.com/n3xion3301" target="_blank" class="social-link">GitLab</a>
-                    <a href="https://github.com/n3xion3301" target="_blank" class="social-link">GitHub</a>
+                
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">echo "Loyalty is Everything"</span>
                 </div>
-                <p class="copyright">© 2024 n3xion. Loyalty is Everything.</p>
+                <div class="terminal-output final-message">
+                    Loyalty is Everything
+                </div>
             </div>
         </div>
     </div>
