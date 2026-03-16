@@ -9,8 +9,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const telegramMessage = `New Contact Form Submission:\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
     
     // Your Telegram Bot Token and Chat ID
-    const botToken = 'YOUR_BOT_TOKEN'; // Replace with your bot token
-    const chatId = 'YOUR_CHAT_ID'; // Replace with your chat ID
+    const botToken = '8730957980:AAEW8vRh8mRP5uI0sHTZid0R3CiRhMAPxtc'; // Replace with your bot token
+    const chatId = '8744522702'; // Replace with your chat ID
     
     // Send to Telegram via bot API
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
