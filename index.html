@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n3xion Loyalty - Contact & Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>n3xion</h1>
+                <p class="tagline">Loyalty is Everything</p>
+            </div>
+            
+            <div class="content">
+                <h2>Get in Touch</h2>
+                <p>Have a question or want to collaborate? Send me a message.</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send via Telegram</button>
+                </form>
+                
+                <div id="successMessage" class="success-message" style="display: none;">
+                    ✓ Message sent! Opening Telegram...
+                </div>
+                
+                <div id="errorMessage" class="error-message" style="display: none;">
+                    ✗ Error sending message. Please try again.
+                </div>
+            </div>
+            
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="project-list">
+                    <a href="https://gitlab.com/n3xion3301/trackmissingprofile" class="project-link">
+                        <span class="project-name">TrackMissingProfile</span>
+                        <span class="project-desc">Tool to help bring missing persons home</span>
+                    </a>
+                    <a href="https://gitlab.com/n3xion3301/facebooktogglelink" class="project-link">
+                        <span class="project-name">FacebookToggleLink</span>
+                        <span class="project-desc">Contact form for collaboration</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="social-links">
+                    <a href="https://t.me/n3xion3301" target="_blank" class="social-link">Telegram</a>
+                    <a href="https://gitlab.com/n3xion3301" target="_blank" class="social-link">GitLab</a>
+                    <a href="https://github.com/n3xion3301" target="_blank" class="social-link">GitHub</a>
+                </div>
+                <p class="copyright">© 2024 n3xion. Loyalty is Everything.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
