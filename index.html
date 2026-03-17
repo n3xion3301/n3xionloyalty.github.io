@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="matrix-bg"></div>
-    
+
     <div class="container">
         <div class="terminal">
             <div class="terminal-header">
@@ -19,14 +19,14 @@
                     <span class="btn-close"></span>
                 </div>
             </div>
-            
+
             <div class="terminal-content">
                 <div class="terminal-line">
                     <span class="prompt">$</span>
                     <span class="command">whoami</span>
                 </div>
                 <div class="terminal-output">n3xion - Loyalty is Everything</div>
-                
+
                 <div class="terminal-line">
                     <span class="prompt">$</span>
                     <span class="command">cat mission.txt</span>
@@ -37,41 +37,47 @@
                     TrackMissingProfile - Finding the lost when authorities won't.<br>
                     <span class="highlight">Loyalty is Everything.</span>
                 </div>
-                
+
                 <div class="contact-section">
                     <div class="terminal-line">
                         <span class="prompt">$</span>
                         <span class="command">send_message</span>
                     </div>
-                    
+
                     <form id="contactForm" class="contact-form">
                         <div class="form-group">
                             <label for="name"><span class="label-prefix">[*]</span> Identity</label>
                             <input type="text" id="name" name="name" placeholder="Your name" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email"><span class="label-prefix">[*]</span> Secure Channel</label>
                             <input type="email" id="email" name="email" placeholder="your@email.com" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="message"><span class="label-prefix">[*]</span> Transmission</label>
                             <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
                         </div>
-                        
+
+                        <div class="form-group">
+                            <label for="files"><span class="label-prefix">[*]</span> Attachments (Photos/Documents)</label>
+                            <input type="file" id="files" name="files" multiple accept="image/*,.pdf,.doc,.docx">
+                            <small style="color: #00ff00; opacity: 0.7; font-size: 11px; display: block; margin-top: 5px;">Max 5 files, 10MB each</small>
+                        </div>
+
                         <button type="submit" class="btn-send">TRANSMIT TO TELEGRAM</button>
                     </form>
-                    
+
                     <div id="successMessage" class="success-message" style="display: none;">
                         <span class="status-icon">✓</span> Message encrypted and transmitted. Opening secure channel...
                     </div>
-                    
+
                     <div id="errorMessage" class="error-message" style="display: none;">
                         <span class="status-icon">✗</span> Transmission failed. Retry?
                     </div>
                 </div>
-                
+
                 <div class="terminal-line">
                     <span class="prompt">$</span>
                     <span class="command">ls projects/</span>
@@ -92,7 +98,7 @@
                         <span class="project-status">ACTIVE</span>
                     </div>
                 </div>
-                
+
                 <div class="terminal-line">
                     <span class="prompt">$</span>
                     <span class="command">connect</span>
@@ -108,7 +114,7 @@
                         <span class="connect-icon">◆</span> GitHub
                     </a>
                 </div>
-                
+
                 <div class="terminal-line">
                     <span class="prompt">$</span>
                     <span class="command">echo "Loyalty is Everything"</span>
@@ -119,7 +125,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
