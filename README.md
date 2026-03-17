@@ -1,22 +1,69 @@
-# n3xion Loyalty
+# TrackMissingProfile - Missing Persons Database
 
-Personal website and contact page for n3xion3301.
+**A free, anonymous platform to report and track missing persons cases.**
 
-**Loyalty is Everything.**
+🌐 **Live Site:** https://n3xion3301.github.io/  
+🔗 **API:** https://trackmissingprofile-api-production.up.railway.app/api/missing-persons
 
-## Projects
+---
 
-- [TrackMissingProfile](https://gitlab.com/n3xion3301/trackmissingprofile) - Tool to help bring missing persons home
-- [FacebookToggleLink](https://gitlab.com/n3xion3301/facebooktogglelink) - Contact form for collaboration
+## 🎯 Mission
 
-## Contact
+When someone goes missing and authorities do nothing, we mobilize our network. Hackers, investigators, activists - all working for free because **every life matters**.
 
-- Telegram: [@n3xion3301](https://t.me/n3xion3301)
-- GitLab: [n3xion3301](https://gitlab.com/n3xion3301)
-- GitHub: [n3xion3301](https://github.com/n3xion3301)
+**No fees. No bureaucracy. No bullshit.**
 
-## Setup
+---
 
-1. Replace `YOUR_BOT_TOKEN` and `YOUR_CHAT_ID` in `script.js` with your Telegram bot credentials
-2. Push to GitHub as `n3xionloyalty.github.io`
-3. Site will be live at `https://n3xionloyalty.github.io`
+## ✨ Features
+
+- ✅ **Anonymous Reporting** - No login required
+- ✅ **Multi-Step Form** - Easy submission process
+- ✅ **Instant Notifications** - Telegram alerts
+- ✅ **REST API** - Full CRUD operations
+- ✅ **Case Tracking** - Unique ID per case
+- ✅ **Persistent Database** - All data saved securely
+
+---
+
+## 📊 Current Cases
+
+**Active:** 1  
+**Latest:** Chance Anderson-Barnes (Age 14, Chicago Heights, IL)
+
+---
+
+## 🔧 Tech Stack
+
+**Frontend:** HTML/CSS/JavaScript (GitHub Pages)  
+**Backend:** Flask + SQLAlchemy + Gunicorn (Railway)  
+**Database:** SQLite  
+**Notifications:** Telegram Bot API
+
+---
+
+## 🚀 API Endpoints
+
+```bash
+# Get all cases
+GET https://trackmissingprofile-api-production.up.railway.app/api/missing-persons
+
+# Get specific case
+GET https://trackmissingprofile-api-production.up.railway.app/api/missing-persons/{id}
+
+# Submit new case
+POST https://trackmissingprofile-api-production.up.railway.app/api/missing-persons
+
+📱 Contact
+
+Telegram: [@n3xion3301](https://t.me/n3xion3301)
+GitLab: n3xion3301
+GitHub: [n3xion3301](https://github.com/n3xion3301)
+
+
+🤝 Contributing
+This is a community project. Help us bring missing persons home.
+"We are Anonymous. We are Legion. We do not forgive. We do not forget. Expect us."
+
+📜 License
+Free to use. No restrictions. Help save lives.
