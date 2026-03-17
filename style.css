@@ -7,7 +7,7 @@
 body {
     font-family: 'Courier New', monospace;
     background: #0a0e27;
-    color: #00ff00;
+    color: #ffffff;
     overflow-x: hidden;
     position: relative;
 }
@@ -21,8 +21,8 @@ body {
     background: 
         repeating-linear-gradient(
             0deg,
-            rgba(0, 255, 0, 0.03) 0px,
-            rgba(0, 255, 0, 0.03) 1px,
+            rgba(255, 255, 255, 0.03) 0px,
+            rgba(255, 255, 255, 0.03) 1px,
             transparent 1px,
             transparent 2px
         );
@@ -54,15 +54,15 @@ body {
     width: 100%;
     max-width: 900px;
     background: #0d1117;
-    border: 2px solid #00ff00;
+    border: 2px solid #ffffff;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3), inset 0 0 20px rgba(0, 255, 0, 0.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.05);
     overflow: hidden;
 }
 
 .terminal-header {
     background: #1a1f2e;
-    border-bottom: 1px solid #00ff00;
+    border-bottom: 1px solid #ffffff;
     padding: 12px 16px;
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,7 @@ body {
 }
 
 .terminal-title {
-    color: #00ff00;
+    color: #ffffff;
     font-size: 13px;
     font-weight: bold;
 }
@@ -114,33 +114,33 @@ body {
 }
 
 .prompt {
-    color: #00ff00;
+    color: #ffffff;
     margin-right: 8px;
     font-weight: bold;
 }
 
 .command {
-    color: #00ff00;
+    color: #ffffff;
     text-decoration: underline;
 }
 
 .terminal-output {
-    color: #00ff00;
+    color: #ffffff;
     margin-bottom: 15px;
     padding-left: 20px;
-    border-left: 2px solid #00ff00;
+    border-left: 2px solid #ffffff;
 }
 
 .highlight {
-    color: #ff00ff;
+    color: #999999;
     font-weight: bold;
 }
 
 .contact-section {
     margin: 30px 0;
     padding: 20px;
-    border: 1px solid #00ff00;
-    background: rgba(0, 255, 0, 0.05);
+    border: 1px solid #ffffff;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .contact-form {
@@ -155,12 +155,12 @@ body {
 }
 
 .label-prefix {
-    color: #ff00ff;
+    color: #999999;
     margin-right: 5px;
 }
 
 label {
-    color: #00ff00;
+    color: #ffffff;
     font-weight: bold;
     margin-bottom: 5px;
     font-size: 12px;
@@ -169,8 +169,8 @@ label {
 input,
 textarea {
     background: #0a0e27;
-    border: 1px solid #00ff00;
-    color: #00ff00;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     padding: 10px;
     font-family: 'Courier New', monospace;
     font-size: 13px;
@@ -180,20 +180,20 @@ textarea {
 input:focus,
 textarea:focus {
     outline: none;
-    border-color: #ff00ff;
-    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    border-color: #999999;
+    box-shadow: 0 0 10px rgba(153, 153, 153, 0.5);
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: #00ff00;
+    color: #ffffff;
     opacity: 0.5;
 }
 
 .btn-send {
-    background: #00ff00;
+    background: #ffffff;
     color: #0a0e27;
-    border: 2px solid #00ff00;
+    border: 2px solid #ffffff;
     padding: 12px;
     font-family: 'Courier New', monospace;
     font-weight: bold;
@@ -205,8 +205,8 @@ textarea::placeholder {
 
 .btn-send:hover {
     background: #0a0e27;
-    color: #00ff00;
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
 
 .btn-send:active {
@@ -214,9 +214,9 @@ textarea::placeholder {
 }
 
 .success-message {
-    background: rgba(0, 255, 0, 0.1);
-    border: 1px solid #00ff00;
-    color: #00ff00;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff;
+    color: #ffffff;
     padding: 12px;
     border-radius: 4px;
     text-align: center;
@@ -249,30 +249,30 @@ textarea::placeholder {
     align-items: center;
     gap: 10px;
     margin-bottom: 8px;
-    color: #00ff00;
+    color: #ffffff;
 }
 
 .project-icon {
-    color: #ff00ff;
+    color: #999999;
 }
 
 .project-link {
-    color: #00ff00;
+    color: #ffffff;
     text-decoration: none;
     transition: all 0.3s;
 }
 
 .project-link:hover {
-    color: #ff00ff;
-    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+    color: #999999;
+    text-shadow: 0 0 10px rgba(153, 153, 153, 0.8);
 }
 
 .project-status {
-    color: #00ff00;
+    color: #ffffff;
     font-size: 11px;
     margin-left: auto;
     padding: 2px 8px;
-    border: 1px solid #00ff00;
+    border: 1px solid #ffffff;
     border-radius: 3px;
 }
 
@@ -285,7 +285,7 @@ textarea::placeholder {
 }
 
 .connect-link {
-    color: #00ff00;
+    color: #ffffff;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -295,18 +295,18 @@ textarea::placeholder {
 }
 
 .connect-icon {
-    color: #ff00ff;
+    color: #999999;
 }
 
 .connect-link:hover {
-    color: #ff00ff;
-    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+    color: #999999;
+    text-shadow: 0 0 10px rgba(153, 153, 153, 0.8);
 }
 
 .final-message {
     text-align: center;
     font-weight: bold;
-    color: #ff00ff;
+    color: #999999;
     margin-top: 20px;
 }
 
@@ -320,12 +320,12 @@ textarea::placeholder {
 }
 
 .terminal-content::-webkit-scrollbar-thumb {
-    background: #00ff00;
+    background: #ffffff;
     border-radius: 4px;
 }
 
 .terminal-content::-webkit-scrollbar-thumb:hover {
-    background: #ff00ff;
+    background: #999999;
 }
 
 @media (max-width: 600px) {
@@ -351,8 +351,8 @@ textarea::placeholder {
 /* File upload styling */
 input[type="file"] {
     background: #0a0e27;
-    border: 1px solid #00ff00;
-    color: #00ff00;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     padding: 10px;
     font-family: 'Courier New', monospace;
     font-size: 13px;
@@ -362,12 +362,12 @@ input[type="file"] {
 
 input[type="file"]:focus {
     outline: none;
-    border-color: #ff00ff;
-    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    border-color: #999999;
+    box-shadow: 0 0 10px rgba(153, 153, 153, 0.5);
 }
 
 input[type="file"]::file-selector-button {
-    background: #00ff00;
+    background: #ffffff;
     color: #0a0e27;
     border: none;
     padding: 8px 15px;
@@ -379,15 +379,15 @@ input[type="file"]::file-selector-button {
 }
 
 input[type="file"]::file-selector-button:hover {
-    background: #ff00ff;
-    box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+    background: #999999;
+    box-shadow: 0 0 10px rgba(153, 153, 153, 0.8);
 }
     animation: mask-glow 2s ease-in-out infinite;
 }
 
 @keyframes mask-glow {
-    0%, 100% { filter: drop-shadow(0 0 20px #00ff00); }
-    50% { filter: drop-shadow(0 0 40px #00ff00) drop-shadow(0 0 60px #00ff00); }
+    0%, 100% { filter: drop-shadow(0 0 20px #ffffff); }
+    50% { filter: drop-shadow(0 0 40px #ffffff) drop-shadow(0 0 60px #ffffff); }
 }
 
 .anonymous-header h1 {
@@ -421,7 +421,7 @@ input[type="file"]::file-selector-button:hover {
 
 .glitch-text::before {
     left: 2px;
-    text-shadow: -2px 0 #ff00ff;
+    text-shadow: -2px 0 #999999;
     clip: rect(24px, 550px, 90px, 0);
     animation: glitch-anim-2 3s infinite linear alternate-reverse;
 }
@@ -461,7 +461,7 @@ input[type="file"]::file-selector-button:hover {
     content: attr(data-text);
     position: absolute;
     left: -1px;
-    text-shadow: 1px 0 #ff00ff;
+    text-shadow: 1px 0 #999999;
     animation: glitch-small 1s infinite;
 }
 
@@ -473,13 +473,13 @@ input[type="file"]::file-selector-button:hover {
 /* Terminal Styling */
 .terminal {
     background: rgba(10, 14, 39, 0.95);
-    border: 2px solid #00ff00;
+    border: 2px solid #ffffff;
     border-radius: 8px;
     max-width: 900px;
     margin: 0 auto;
     box-shadow: 
-        0 0 20px rgba(0, 255, 0, 0.3),
-        inset 0 0 50px rgba(0, 255, 0, 0.05);
+        0 0 20px rgba(255, 255, 255, 0.3),
+        inset 0 0 50px rgba(255, 255, 255, 0.05);
     animation: terminal-flicker 0.15s infinite;
 }
 
@@ -489,7 +489,7 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .terminal-header {
-    background: #00ff00;
+    background: #ffffff;
     color: #000;
     padding: 10px 15px;
     display: flex;
@@ -518,16 +518,16 @@ input[type="file"]::file-selector-button:hover {
 /* Message Boxes */
 .message-box,
 .operation-box {
-    background: rgba(0, 255, 0, 0.05);
-    border-left: 3px solid #00ff00;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid #ffffff;
     padding: 20px;
     margin-bottom: 30px;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .message-header,
 .operation-header {
-    color: #ff00ff;
+    color: #999999;
     font-weight: bold;
     margin-bottom: 15px;
     font-size: 16px;
@@ -548,15 +548,15 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .status-active {
-    color: #00ff00;
+    color: #ffffff;
     font-weight: bold;
-    text-shadow: 0 0 5px #00ff00;
+    text-shadow: 0 0 5px #ffffff;
 }
 
 .highlight {
-    color: #ff00ff;
+    color: #999999;
     font-weight: bold;
-    text-shadow: 0 0 5px #ff00ff;
+    text-shadow: 0 0 5px #999999;
 }
 
 /* Section Dividers */
@@ -564,9 +564,9 @@ input[type="file"]::file-selector-button:hover {
     text-align: center;
     margin: 40px 0 30px 0;
     padding: 15px;
-    background: rgba(255, 0, 255, 0.1);
-    border-top: 1px solid #ff00ff;
-    border-bottom: 1px solid #ff00ff;
+    background: rgba(153, 153, 153, 0.1);
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
 }
 
 /* Form Styling */
@@ -588,7 +588,7 @@ input[type="file"]::file-selector-button:hover {
 
 .section-icon {
     margin-right: 10px;
-    color: #ff00ff;
+    color: #999999;
 }
 
 .form-group {
@@ -598,14 +598,14 @@ input[type="file"]::file-selector-button:hover {
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: #00ff00;
+    color: #ffffff;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .required {
-    color: #ff00ff;
+    color: #999999;
     margin-right: 5px;
 }
 
@@ -619,8 +619,8 @@ select,
 textarea {
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
-    border: 1px solid #00ff00;
-    color: #00ff00;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     padding: 12px;
     font-family: 'Share Tech Mono', monospace;
     font-size: 14px;
@@ -632,8 +632,8 @@ input:focus,
 select:focus,
 textarea:focus {
     outline: none;
-    border-color: #ff00ff;
-    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    border-color: #999999;
+    box-shadow: 0 0 15px rgba(153, 153, 153, 0.5);
     background: rgba(0, 0, 0, 0.9);
 }
 
@@ -648,7 +648,7 @@ select {
 
 select option {
     background: #000;
-    color: #00ff00;
+    color: #ffffff;
 }
 
 /* Form Row */
@@ -667,20 +667,20 @@ select option {
 /* File Upload */
 input[type="file"] {
     background: rgba(0, 0, 0, 0.7);
-    border: 2px dashed #00ff00;
-    color: #00ff00;
+    border: 2px dashed #ffffff;
+    color: #ffffff;
     padding: 15px;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 input[type="file"]:hover {
-    border-color: #ff00ff;
-    background: rgba(255, 0, 255, 0.1);
+    border-color: #999999;
+    background: rgba(153, 153, 153, 0.1);
 }
 
 input[type="file"]::file-selector-button {
-    background: #00ff00;
+    background: #ffffff;
     color: #000;
     border: none;
     padding: 10px 20px;
@@ -694,8 +694,8 @@ input[type="file"]::file-selector-button {
 }
 
 input[type="file"]::file-selector-button:hover {
-    background: #ff00ff;
-    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+    background: #999999;
+    box-shadow: 0 0 15px rgba(153, 153, 153, 0.8);
 }
 
 .file-hint {
@@ -709,7 +709,7 @@ input[type="file"]::file-selector-button:hover {
 /* Submit Button */
 .btn-send {
     width: 100%;
-    background: #00ff00;
+    background: #ffffff;
     color: #000;
     border: none;
     padding: 18px;
@@ -727,8 +727,8 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .btn-send:hover {
-    background: #ff00ff;
-    box-shadow: 0 0 30px rgba(255, 0, 255, 0.8);
+    background: #999999;
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.8);
     transform: scale(1.02);
 }
 
@@ -777,9 +777,9 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .connect-link {
-    background: rgba(0, 255, 0, 0.05);
-    border: 1px solid #00ff00;
-    color: #00ff00;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #ffffff;
+    color: #ffffff;
     text-decoration: none;
     padding: 15px 20px;
     display: flex;
@@ -791,15 +791,15 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .connect-link:hover {
-    background: rgba(255, 0, 255, 0.1);
-    border-color: #ff00ff;
-    color: #ff00ff;
-    box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+    background: rgba(153, 153, 153, 0.1);
+    border-color: #999999;
+    color: #999999;
+    box-shadow: 0 0 20px rgba(153, 153, 153, 0.4);
     transform: translateX(10px);
 }
 
 .connect-icon {
-    color: #ff00ff;
+    color: #999999;
     font-size: 18px;
 }
 
@@ -808,9 +808,9 @@ input[type="file"]::file-selector-button:hover {
     text-align: center;
     margin-top: 50px;
     padding: 40px 20px;
-    border-top: 2px solid #00ff00;
-    border-bottom: 2px solid #00ff00;
-    background: rgba(0, 255, 0, 0.03);
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .footer-message p {
@@ -828,10 +828,10 @@ input[type="file"]::file-selector-button:hover {
 
 @keyframes pulse-glow {
     0%, 100% {
-        text-shadow: 0 0 10px #ff00ff;
+        text-shadow: 0 0 10px #999999;
     }
     50% {
-        text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+        text-shadow: 0 0 20px #999999, 0 0 30px #999999;
     }
 }
 
@@ -896,11 +896,11 @@ input[type="file"]::file-selector-button:hover {
     top: 20px;
     right: 20px;
     background: rgba(0, 0, 0, 0.9);
-    border: 1px solid #00ff00;
+    border: 1px solid #ffffff;
     padding: 10px 20px;
     font-size: 12px;
     z-index: 1000;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     animation: counter-glitch 3s infinite;
 }
 
@@ -912,26 +912,26 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .visitor-counter .label {
-    color: #00ff00;
+    color: #ffffff;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .visitor-counter .count {
-    color: #ff00ff;
+    color: #999999;
     font-size: 18px;
     font-weight: bold;
-    text-shadow: 0 0 10px #ff00ff;
+    text-shadow: 0 0 10px #999999;
 }
 
 /* Operations Status Dashboard */
 .operations-dashboard {
     background: rgba(0, 0, 0, 0.9);
-    border: 2px solid #00ff00;
+    border: 2px solid #ffffff;
     padding: 20px;
     margin: 30px 0;
-    box-shadow: 0 0 30px rgba(0, 255, 0, 0.2);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
 }
 
 .dashboard-grid {
@@ -942,24 +942,24 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .stat-box {
-    background: rgba(0, 255, 0, 0.05);
-    border: 1px solid #00ff00;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #ffffff;
     padding: 20px;
     text-align: center;
     transition: all 0.3s;
 }
 
 .stat-box:hover {
-    background: rgba(255, 0, 255, 0.1);
-    border-color: #ff00ff;
+    background: rgba(153, 153, 153, 0.1);
+    border-color: #999999;
     transform: scale(1.05);
 }
 
 .stat-number {
     font-size: 36px;
-    color: #ff00ff;
+    color: #999999;
     font-weight: bold;
-    text-shadow: 0 0 15px #ff00ff;
+    text-shadow: 0 0 15px #999999;
     animation: number-flicker 2s infinite;
 }
 
@@ -969,7 +969,7 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .stat-label {
-    color: #00ff00;
+    color: #ffffff;
     font-size: 12px;
     text-transform: uppercase;
     margin-top: 10px;
@@ -991,7 +991,7 @@ input[type="file"]::file-selector-button:hover {
     left: 0;
     width: 100%;
     height: 2px;
-    background: rgba(0, 255, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
     z-index: 0;
 }
 
@@ -1000,10 +1000,10 @@ input[type="file"]::file-selector-button:hover {
     top: 20px;
     left: 0;
     height: 2px;
-    background: #00ff00;
+    background: #ffffff;
     transition: width 0.5s;
     z-index: 1;
-    box-shadow: 0 0 10px #00ff00;
+    box-shadow: 0 0 10px #ffffff;
 }
 
 .progress-step {
@@ -1018,7 +1018,7 @@ input[type="file"]::file-selector-button:hover {
     height: 40px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.9);
-    border: 2px solid rgba(0, 255, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1028,17 +1028,17 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .progress-step.active .step-circle {
-    border-color: #ff00ff;
-    background: rgba(255, 0, 255, 0.2);
-    color: #ff00ff;
-    box-shadow: 0 0 20px #ff00ff;
+    border-color: #999999;
+    background: rgba(153, 153, 153, 0.2);
+    color: #999999;
+    box-shadow: 0 0 20px #999999;
     animation: pulse-step 1s infinite;
 }
 
 .progress-step.completed .step-circle {
-    border-color: #00ff00;
-    background: rgba(0, 255, 0, 0.2);
-    color: #00ff00;
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
 }
 
 .progress-step.completed .step-circle::before {
@@ -1052,13 +1052,13 @@ input[type="file"]::file-selector-button:hover {
 
 .step-label {
     font-size: 11px;
-    color: #00ff00;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .progress-step.active .step-label {
-    color: #ff00ff;
+    color: #999999;
 }
 
 /* Form Step Container */
@@ -1093,9 +1093,9 @@ input[type="file"]::file-selector-button:hover {
 .btn-next {
     flex: 1;
     padding: 15px;
-    background: rgba(0, 255, 0, 0.1);
-    border: 1px solid #00ff00;
-    color: #00ff00;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff;
+    color: #ffffff;
     font-family: 'Share Tech Mono', monospace;
     font-size: 14px;
     font-weight: bold;
@@ -1106,10 +1106,10 @@ input[type="file"]::file-selector-button:hover {
 
 .btn-prev:hover,
 .btn-next:hover {
-    background: rgba(255, 0, 255, 0.2);
-    border-color: #ff00ff;
-    color: #ff00ff;
-    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+    background: rgba(153, 153, 153, 0.2);
+    border-color: #999999;
+    color: #999999;
+    box-shadow: 0 0 20px rgba(153, 153, 153, 0.5);
 }
 
 .btn-prev:disabled {
