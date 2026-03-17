@@ -3,16 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>n3xion - Anonymous Collective</title>
+    <title>n3xion - Underground Anonymous Collective</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="matrix-bg"></div>
+    <!-- Visitor Counter -->
+    <div class="visitor-counter">
+        <div class="label">ACTIVE CONNECTIONS</div>
+        <div class="count" id="visitorCount">0</div>
+    </div>
 
+    <!-- Service Status -->
+    <div class="service-status">
+        <div class="status-dot"></div>
+        <div class="status-text">FREE SERVICE • OPERATIONAL</div>
+    </div>
+
+    <div class="glitch-overlay"></div>
+    <div class="scanlines"></div>
+    
     <div class="container">
+        <!-- Anonymous Header with Logo -->
+        <div class="anonymous-header">
+            <div class="n3xion-logo">
+                <div class="logo-icon">👤</div>
+                <div class="logo-text">
+                    <div class="logo-title">n3xion</div>
+                    <div class="logo-subtitle">UNDERGROUND COLLECTIVE</div>
+                </div>
+            </div>
+            
+            <div class="free-badge">100% FREE • NO FEES • ANONYMOUS</div>
+            
+            <h1 class="glitch-text" data-text="WE FIND THE LOST">WE FIND THE LOST</h1>
+            <p class="tagline glitch-text" data-text="WHEN THE SYSTEM FAILS • WE ACT">
+                WHEN THE SYSTEM FAILS • WE ACT
+            </p>
+        </div>
+
+        <!-- Operations Dashboard -->
+        <div class="operations-dashboard">
+            <div class="section-divider">
+                <span class="glitch-small" data-text="[LIVE OPERATIONS STATUS]">[LIVE OPERATIONS STATUS]</span>
+            </div>
+            <div class="dashboard-grid">
+                <div class="stat-box">
+                    <div class="stat-number" id="activeCases">47</div>
+                    <div class="stat-label">Active Cases</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="resolved">23</div>
+                    <div class="stat-label">Resolved</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="network">1,247</div>
+                    <div class="stat-label">Network Nodes</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Monitoring</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Terminal -->
         <div class="terminal">
             <div class="terminal-header">
-                <span class="terminal-title">n3xion@collective:~$</span>
+                <span class="terminal-title">[ENCRYPTED SUBMISSION PORTAL]</span>
                 <div class="terminal-buttons">
                     <span class="btn-minimize"></span>
                     <span class="btn-maximize"></span>
@@ -21,111 +78,308 @@
             </div>
 
             <div class="terminal-content">
-                <div class="terminal-line">
-                    <span class="prompt">$</span>
-                    <span class="command">whoami</span>
+                <!-- Mission Statement -->
+                <div class="message-box">
+                    <div class="message-header">
+                        <span class="glitch-small" data-text="[MISSION BRIEFING]">[MISSION BRIEFING]</span>
+                    </div>
+                    <div class="message-content">
+                        <p>
+                            You've reached the n3xion underground network. We operate outside the system.
+                            <span class="highlight">No fees. No bureaucracy. No bullshit.</span>
+                        </p>
+                        <p>
+                            When someone goes missing and authorities do nothing, we mobilize our network.
+                            Hackers, investigators, activists - all working for free because 
+                            <strong>every life matters</strong>.
+                        </p>
+                        <p class="quote">
+                            "We are Anonymous. We are Legion. We do not forgive. We do not forget. Expect us."
+                        </p>
+                    </div>
                 </div>
-                <div class="terminal-output">n3xion - Loyalty is Everything</div>
 
-                <div class="terminal-line">
-                    <span class="prompt">$</span>
-                    <span class="command">cat mission.txt</span>
-                </div>
-                <div class="terminal-output">
-                    We are n3xion. We operate in the shadows.<br>
-                    Our mission: Help those the system has failed.<br>
-                    TrackMissingProfile - Finding the lost when authorities won't.<br>
-                    <span class="highlight">Loyalty is Everything.</span>
-                </div>
-
+                <!-- Report Form with Multi-Step -->
                 <div class="contact-section">
-                    <div class="terminal-line">
-                        <span class="prompt">$</span>
-                        <span class="command">send_message</span>
+                    <div class="section-divider">
+                        <span class="glitch-small" data-text="[SUBMIT ENCRYPTED REPORT]">[SUBMIT ENCRYPTED REPORT]</span>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="form-progress">
+                        <div class="progress-line" id="progressLine"></div>
+                        <div class="progress-step active" data-step="1">
+                            <div class="step-circle">1</div>
+                            <div class="step-label">Your Info</div>
+                        </div>
+                        <div class="progress-step" data-step="2">
+                            <div class="step-circle">2</div>
+                            <div class="step-label">Missing Person</div>
+                        </div>
+                        <div class="progress-step" data-step="3">
+                            <div class="step-circle">3</div>
+                            <div class="step-label">Last Seen</div>
+                        </div>
+                        <div class="progress-step" data-step="4">
+                            <div class="step-circle">4</div>
+                            <div class="step-label">Details</div>
+                        </div>
+                        <div class="progress-step" data-step="5">
+                            <div class="step-circle">5</div>
+                            <div class="step-label">Submit</div>
+                        </div>
                     </div>
 
                     <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="name"><span class="label-prefix">[*]</span> Identity</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <!-- STEP 1: Reporter Information -->
+                        <div class="form-step active" data-step="1">
+                            <div class="form-section-header">
+                                <span class="section-icon">▸</span> YOUR CREDENTIALS
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reporterName"><span class="required">*</span> YOUR NAME</label>
+                                <input type="text" id="reporterName" name="reporterName" placeholder="Full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reporterEmail"><span class="required">*</span> EMAIL</label>
+                                <input type="email" id="reporterEmail" name="reporterEmail" placeholder="your@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reporterPhone"><span class="required">*</span> PHONE</label>
+                                <input type="tel" id="reporterPhone" name="reporterPhone" placeholder="+1 (555) 123-4567" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="relationship"><span class="required">*</span> RELATIONSHIP</label>
+                                <select id="relationship" name="relationship" required>
+                                    <option value="">Select...</option>
+                                    <option value="parent">Parent</option>
+                                    <option value="sibling">Sibling</option>
+                                    <option value="spouse">Spouse/Partner</option>
+                                    <option value="child">Child</option>
+                                    <option value="friend">Friend</option>
+                                    <option value="other-family">Other Family</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- STEP 2: Missing Person Details -->
+                        <div class="form-step" data-step="2">
+                            <div class="form-section-header">
+                                <span class="section-icon">▸</span> TARGET PROFILE
+                            </div>
+
+                            <div class="form-group">
+                                <label for="missingName"><span class="required">*</span> FULL NAME</label>
+                                <input type="text" id="missingName" name="missingName" placeholder="Missing person's full name" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="age"><span class="required">*</span> AGE</label>
+                                    <input type="number" id="age" name="age" placeholder="Age" min="0" max="120" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="gender"><span class="required">*</span> GENDER</label>
+                                    <select id="gender" name="gender" required>
+                                        <option value="">Select...</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="non-binary">Non-Binary</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="height">HEIGHT</label>
+                                    <input type="text" id="height" name="height" placeholder="e.g., 5'8&quot; or 173cm">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="weight">WEIGHT</label>
+                                    <input type="text" id="weight" name="weight" placeholder="e.g., 150 lbs or 68 kg">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="hairColor">HAIR COLOR</label>
+                                    <input type="text" id="hairColor" name="hairColor" placeholder="e.g., Brown, Blonde">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="eyeColor">EYE COLOR</label>
+                                    <input type="text" id="eyeColor" name="eyeColor" placeholder="e.g., Blue, Brown">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="race">RACE/ETHNICITY</label>
+                                <input type="text" id="race" name="race" placeholder="e.g., Caucasian, Hispanic, Asian">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="distinguishingFeatures">IDENTIFYING MARKS</label>
+                                <textarea id="distinguishingFeatures" name="distinguishingFeatures" placeholder="Scars, tattoos, birthmarks, piercings..." rows="3"></textarea>
+                            </div>
+                        </div>
+                        <!-- STEP 3: Last Seen Information -->
+                        <div class="form-step" data-step="3">
+                            <div class="form-section-header">
+                                <span class="section-icon">▸</span> LAST KNOWN LOCATION
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastSeenDate"><span class="required">*</span> DATE LAST SEEN</label>
+                                <input type="date" id="lastSeenDate" name="lastSeenDate" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastSeenTime">TIME LAST SEEN</label>
+                                <input type="time" id="lastSeenTime" name="lastSeenTime">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastSeenLocation"><span class="required">*</span> LOCATION</label>
+                                <input type="text" id="lastSeenLocation" name="lastSeenLocation" placeholder="Address, city, landmarks" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastSeenClothing">CLOTHING DESCRIPTION</label>
+                                <textarea id="lastSeenClothing" name="lastSeenClothing" placeholder="Describe clothing, shoes, accessories..." rows="3"></textarea>
+                            </div>
+                        </div>
+                        <!-- STEP 3: Last Seen Information -->
+                        <div class="form-step" data-step="3">
+                            <div class="form-section-header">
+                                <span class="section-icon">▸</span> LAST KNOWN LOCATION
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastSeenDate"><span class="required">*</span> DATE LAST SEEN</label>
+                                <input type="date" id="lastSeenDate" name="lastSeenDate" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastSeenTime">TIME LAST SEEN</label>
+                                <input type="time" id="lastSeenTime" name="lastSeenTime">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastSeenLocation"><span class="required">*</span> LOCATION</label>
+                                <input type="text" id="lastSeenLocation" name="lastSeenLocation" placeholder="Address, city, landmarks" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastSeenClothing">CLOTHING DESCRIPTION</label>
+                                <textarea id="lastSeenClothing" name="lastSeenClothing" placeholder="Describe clothing, shoes, accessories..." rows="3"></textarea>
+                            </div>
+                        </div>
+                        <!-- STEP 4: Circumstances & Details -->
+                        <div class="form-step" data-step="4">
+                            <div class="form-section-header">
+                                <span class="section-icon">▸</span> INCIDENT DETAILS
+                            </div>
+
+                            <div class="form-group">
+                                <label for="circumstances"><span class="required">*</span> WHAT HAPPENED?</label>
+                                <textarea id="circumstances" name="circumstances" placeholder="Describe the circumstances. Where were they going? Any suspicious activity?" rows="5" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="medicalConditions">MEDICAL CONDITIONS</label>
+                                <textarea id="medicalConditions" name="medicalConditions" placeholder="Medical conditions, medications, mental health concerns..." rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="vehicleInfo">VEHICLE INFORMATION</label>
+                                <textarea id="vehicleInfo" name="vehicleInfo" placeholder="Make, model, color, license plate..." rows="2"></textarea>
+                            </div>
+
+                            <div class="form-section-header">
+                                <span class="section-icon">▸</span> OFFICIAL STATUS
+                            </div>
+
+                            <div class="form-group">
+                                <label for="policeReported"><span class="required">*</span> REPORTED TO POLICE?</label>
+                                <select id="policeReported" name="policeReported" required>
+                                    <option value="">Select...</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                    <option value="planning">Planning to report</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="caseNumber">CASE NUMBER</label>
+                                <input type="text" id="caseNumber" name="caseNumber" placeholder="Police case/report number">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="policeDepartment">DEPARTMENT</label>
+                                <input type="text" id="policeDepartment" name="policeDepartment" placeholder="Police department name">
+                            </div>
+                        </div>
+                        <!-- STEP 5: Final Step & Submit -->
+                        <div class="form-step" data-step="5">
+                            <div class="form-section-header">
+                                <span class="section-icon">▸</span> ENCRYPTED ATTACHMENTS
+                            </div>
+
+                            <div class="form-group">
+                                <label for="files">UPLOAD FILES</label>
+                                <input type="file" id="files" name="files" multiple accept="image/*,.pdf,.doc,.docx">
+                                <small class="file-hint">Photos, documents, evidence. Max 10MB per file.</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="additionalInfo">ADDITIONAL INTEL</label>
+                                <textarea id="additionalInfo" name="additionalInfo" placeholder="Any other relevant information..." rows="4"></textarea>
+                            </div>
+
+                            <div class="message-box" style="margin-top: 30px;">
+                                <div class="message-content">
+                                    <p class="highlight">⚠️ FINAL VERIFICATION</p>
+                                    <p>By submitting this report, you confirm:</p>
+                                    <ul style="margin-left: 20px; margin-top: 10px;">
+                                        <li>All information provided is accurate</li>
+                                        <li>You have legal authority to report this case</li>
+                                        <li>You understand this is a FREE service</li>
+                                        <li>Your data will be encrypted and distributed to our network</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="email"><span class="label-prefix">[*]</span> Secure Channel</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <!-- Navigation Buttons -->
+                        <div class="form-navigation">
+                            <button type="button" class="btn-prev" id="prevBtn" disabled>◀ PREVIOUS</button>
+                            <button type="button" class="btn-next" id="nextBtn">NEXT ▶</button>
+                            <button type="submit" class="btn-send glitch-btn" id="submitBtn" style="display: none;" data-text="TRANSMIT ENCRYPTED REPORT">
+                                TRANSMIT ENCRYPTED REPORT
+                            </button>
                         </div>
-
-                        <div class="form-group">
-                            <label for="message"><span class="label-prefix">[*]</span> Transmission</label>
-                            <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="files"><span class="label-prefix">[*]</span> Attachments (Photos/Documents)</label>
-                            <input type="file" id="files" name="files" multiple accept="image/*,.pdf,.doc,.docx">
-                            <small style="color: #00ff00; opacity: 0.7; font-size: 11px; display: block; margin-top: 5px;">Max 5 files, 10MB each</small>
-                        </div>
-
-                        <button type="submit" class="btn-send">TRANSMIT TO TELEGRAM</button>
                     </form>
 
                     <div id="successMessage" class="success-message" style="display: none;">
-                        <span class="status-icon">✓</span> Message encrypted and transmitted. Opening secure channel...
+                        <span class="status-icon">✓</span> TRANSMISSION SUCCESSFUL. REPORT ENCRYPTED AND DISTRIBUTED TO NETWORK.
                     </div>
 
                     <div id="errorMessage" class="error-message" style="display: none;">
-                        <span class="status-icon">✗</span> Transmission failed. Retry?
+                        <span class="status-icon">✗</span> TRANSMISSION FAILED. RETRY OR CONTACT DIRECTLY.
                     </div>
-                </div>
-
-                <div class="terminal-line">
-                    <span class="prompt">$</span>
-                    <span class="command">ls projects/</span>
-                </div>
-                <div class="projects-section">
-                    <div class="project-item">
-                        <span class="project-icon">[>]</span>
-                        <a href="https://gitlab.com/n3xion3301/trackmissingprofile" target="_blank" class="project-link">
-                            TrackMissingProfile
-                        </a>
-                        <span class="project-status">ACTIVE</span>
-                    </div>
-                    <div class="project-item">
-                        <span class="project-icon">[>]</span>
-                        <a href="https://gitlab.com/n3xion3301/facebooktogglelink" target="_blank" class="project-link">
-                            FacebookToggleLink
-                        </a>
-                        <span class="project-status">ACTIVE</span>
-                    </div>
-                </div>
-
-                <div class="terminal-line">
-                    <span class="prompt">$</span>
-                    <span class="command">connect</span>
-                </div>
-                <div class="connect-section">
-                    <a href="https://t.me/n3xion3301" target="_blank" class="connect-link">
-                        <span class="connect-icon">◆</span> Telegram
-                    </a>
-                    <a href="https://gitlab.com/n3xion3301" target="_blank" class="connect-link">
-                        <span class="connect-icon">◆</span> GitLab
-                    </a>
-                    <a href="https://github.com/n3xion3301" target="_blank" class="connect-link">
-                        <span class="connect-icon">◆</span> GitHub
-                    </a>
-                </div>
-
-                <div class="terminal-line">
-                    <span class="prompt">$</span>
-                    <span class="command">echo "Loyalty is Everything"</span>
-                </div>
-                <div class="terminal-output final-message">
-                    Loyalty is Everything
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="matrix.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
