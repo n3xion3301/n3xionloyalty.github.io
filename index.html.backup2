@@ -83,33 +83,6 @@
                     <div class="message-header">
                         <span class="glitch-small" data-text="[MISSION BRIEFING]">[MISSION BRIEFING]</span>
                     </div>
-                <!-- Telegram Contact Section -->
-                <div class="telegram-contact">
-                    <div class="section-divider">
-                        <span class="glitch-small" data-text="[DIRECT CONTACT]">[DIRECT CONTACT]</span>
-                    </div>
-                    
-                    <div class="message-box telegram-box">
-                        <div class="message-header">
-                            <span class="glitch-small" data-text="⚡ INSTANT RESPONSE">[⚡ INSTANT RESPONSE]</span>
-                        </div>
-                        <div class="message-content">
-                            <p class="highlight">Need immediate assistance? Contact us directly on Telegram.</p>
-                            <p>Our team monitors this channel 24/7 for urgent cases.</p>
-                            
-                            <a href="https://t.me/n3xion3301" target="_blank" class="telegram-btn">
-                                <span class="telegram-icon">✈</span>
-                                <span class="telegram-text">CONTACT ON TELEGRAM</span>
-                                <span class="telegram-username">@n3xion3301</span>
-                            </a>
-                            
-                            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.7;">
-                                Or use the detailed form below for comprehensive case submission.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
                     <div class="message-content">
                         <p>
                             You've reached the n3xion underground network. We operate outside the system.
