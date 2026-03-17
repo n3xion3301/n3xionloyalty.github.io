@@ -49,69 +49,82 @@ document.getElementById('contactForm').addEventListener('submit', async function
     // Show uploading status
     const submitBtn = document.querySelector('.btn-send');
     const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'SUBMITTING...';
+    submitBtn.textContent = 'ENCRYPTING...';
     submitBtn.disabled = true;
 
     try {
-        // Format comprehensive message
+        // Format comprehensive message with Anonymous theme
         const message = `
-🚨 MISSING PERSON REPORT 🚨
+🎭 ANONYMOUS MISSING PERSON REPORT 🎭
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 REPORTER INFORMATION
+⚠️ WE ARE LEGION - WE DO NOT FORGET
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👤 Name: ${formData.reporterName}
-📧 Email: ${formData.reporterEmail}
-📱 Phone: ${formData.reporterPhone}
+
+📋 REPORTER CREDENTIALS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👤 Identity: ${formData.reporterName}
+📧 Secure Channel: ${formData.reporterEmail}
+📱 Contact Line: ${formData.reporterPhone}
 🔗 Relationship: ${formData.relationship}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👥 MISSING PERSON DETAILS
+🎯 TARGET PROFILE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👤 Name: ${formData.missingName}
+👤 Full Name: ${formData.missingName}
 🎂 Age: ${formData.age}
 ⚧ Gender: ${formData.gender}
 📏 Height: ${formData.height || 'Not provided'}
 ⚖️ Weight: ${formData.weight || 'Not provided'}
-💇 Hair: ${formData.hairColor || 'Not provided'}
-👁 Eyes: ${formData.eyeColor || 'Not provided'}
+💇 Hair Color: ${formData.hairColor || 'Not provided'}
+👁 Eye Color: ${formData.eyeColor || 'Not provided'}
 🌍 Race/Ethnicity: ${formData.race || 'Not provided'}
-✨ Distinguishing Features: ${formData.distinguishingFeatures || 'None reported'}
+✨ Identifying Marks: ${formData.distinguishingFeatures || 'None reported'}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📍 LAST SEEN INFORMATION
+📍 LAST KNOWN LOCATION
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📅 Date: ${formData.lastSeenDate}
+📅 Date Last Seen: ${formData.lastSeenDate}
 🕐 Time: ${formData.lastSeenTime || 'Unknown'}
 📌 Location: ${formData.lastSeenLocation}
 👕 Clothing: ${formData.lastSeenClothing || 'Not described'}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-⚠️ CIRCUMSTANCES
+⚠️ INCIDENT DETAILS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ${formData.circumstances}
 
-💊 Medical Info: ${formData.medicalConditions || 'None reported'}
-🚗 Vehicle: ${formData.vehicleInfo || 'None'}
+💊 Medical Conditions: ${formData.medicalConditions || 'None reported'}
+🚗 Vehicle Info: ${formData.vehicleInfo || 'None'}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👮 LAW ENFORCEMENT
+👮 OFFICIAL STATUS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🚔 Reported to Police: ${formData.policeReported}
+🚔 Reported to Authorities: ${formData.policeReported}
 📋 Case Number: ${formData.caseNumber || 'Not available'}
 🏛 Department: ${formData.policeDepartment || 'Not provided'}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📎 ATTACHMENTS: ${files.length} file(s)
+📎 ENCRYPTED ATTACHMENTS: ${files.length} file(s)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-ℹ️ Additional Information:
+ℹ️ Additional Intel:
 ${formData.additionalInfo || 'None'}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-⏰ Submitted: ${new Date().toLocaleString()}
+⏰ Transmission Time: ${new Date().toLocaleString()}
+🔐 Status: ENCRYPTED & DISTRIBUTED
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WE ARE ANONYMOUS
+WE ARE LEGION
+WE DO NOT FORGIVE
+WE DO NOT FORGET
+EXPECT US
         `.trim();
+
+        // Update status
+        submitBtn.textContent = 'TRANSMITTING...';
 
         // Send main report
         const textResponse = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -125,7 +138,7 @@ ${formData.additionalInfo || 'None'}
         });
 
         if (!textResponse.ok) {
-            throw new Error('Failed to send report');
+            throw new Error('Transmission failed');
         }
 
         // Upload files if any
@@ -145,7 +158,7 @@ ${formData.additionalInfo || 'None'}
                 const fileFormData = new FormData();
                 fileFormData.append('chat_id', chatId);
                 fileFormData.append('document', file);
-                fileFormData.append('caption', `📎 ${file.name}\n👤 Missing: ${formData.missingName}\n📧 Reporter: ${formData.reporterEmail}`);
+                fileFormData.append('caption', `🎭 ANONYMOUS EVIDENCE\n📎 ${file.name}\n👤 Target: ${formData.missingName}\n📧 Reporter: ${formData.reporterEmail}`);
 
                 await fetch(`https://api.telegram.org/bot${botToken}/sendDocument`, {
                     method: 'POST',
@@ -155,7 +168,7 @@ ${formData.additionalInfo || 'None'}
         }
 
         // Success
-        submitBtn.textContent = '✓ REPORT SUBMITTED';
+        submitBtn.textContent = '✓ TRANSMISSION COMPLETE';
         document.getElementById('successMessage').style.display = 'block';
         document.getElementById('errorMessage').style.display = 'none';
         document.getElementById('contactForm').reset();
@@ -168,9 +181,21 @@ ${formData.additionalInfo || 'None'}
 
     } catch (error) {
         console.error('Error:', error);
-        submitBtn.textContent = originalText;
+        submitBtn.textContent = '✗ TRANSMISSION FAILED';
         submitBtn.disabled = false;
         document.getElementById('errorMessage').style.display = 'block';
         document.getElementById('successMessage').style.display = 'none';
+        
+        setTimeout(() => {
+            submitBtn.textContent = originalText;
+        }, 3000);
     }
+});
+
+// Add typing effect on page load
+window.addEventListener('load', function() {
+    const typingElements = document.querySelectorAll('.typing-effect');
+    typingElements.forEach(element => {
+        element.style.animation = 'typing 3s steps(60, end)';
+    });
 });
