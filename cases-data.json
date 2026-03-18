@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "id": 1,
+      "first_name": "Chance",
+      "last_name": "Anderson-Barnes",
+      "date_of_birth": "2012-01-01",
+      "age": 14,
+      "gender": "Male",
+      "height": "5'6\"",
+      "weight": "160 lbs",
+      "last_seen_date": "2026-03-08",
+      "last_seen_location": "Chicago Heights, Illinois",
+      "last_seen_clothing": "White shirt, black pants, red/black Jordans",
+      "contact_person": "Chicago Heights Police",
+      "contact_phone": "708-756-6400",
+      "detective_phone": "708-756-6435",
+      "detective_name": "Detective Stoterau",
+      "ncmec_case": "2079802",
+      "ncic": "M708772389",
+      "status": "active",
+      "page_url": "chance-anderson-barnes.html"
+    }
+  ],
+  "last_updated": "2026-03-17"
+}

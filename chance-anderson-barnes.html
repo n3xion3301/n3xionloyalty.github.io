@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISSING: Chance Anderson-Barnes - TrackMissingProfile</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .case-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.9);
+            border: 3px solid #00ff00;
+        }
+        
+        .urgent-banner {
+            background: #ff0000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .case-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .case-photo {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 30px;
+            background: rgba(0, 255, 0, 0.1);
+            border: 2px solid #00ff00;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(0, 255, 0, 0.5);
+        }
+        
+        .case-name {
+            font-size: 48px;
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+        
+        .case-id {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .info-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(0, 255, 0, 0.05);
+            border-left: 4px solid #00ff00;
+        }
+        
+        .info-section h2 {
+            color: #00ff00;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .info-row {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            margin-bottom: 10px;
+            color: #00ff00;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .contact-box {
+            background: rgba(255, 0, 0, 0.1);
+            border: 2px solid #ff0000;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .contact-box h2 {
+            color: #ff0000;
+            margin-bottom: 15px;
+        }
+        
+        .share-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+        
+        .share-btn {
+            padding: 15px 30px;
+            background: #00ff00;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .share-btn:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="case-container">
+        <div class="urgent-banner">
+            ⚠️ URGENT: MISSING PERSON ⚠️
+        </div>
+        
+        <div class="case-header">
+            <div class="case-photo">
+                NO PHOTO AVAILABLE<br>
+                <small>If you have a photo, please contact us</small>
+            </div>
+            <h1 class="case-name">CHANCE ANDERSON-BARNES</h1>
+            <div class="case-id">CASE #1 | NCMEC: 2079802 | NCIC: M708772389</div>
+        </div>
+        
+        <div class="info-section">
+            <h2>▸ PERSONAL INFORMATION</h2>
+            <div class="info-row">
+                <span class="info-label">Full Name:</span>
+                <span>Chance Anderson-Barnes</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Age:</span>
+                <span>14 years old</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Date of Birth:</span>
+                <span>Approximately 2012</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Gender:</span>
+                <span>Male</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Height:</span>
+                <span>5'6"</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Weight:</span>
+                <span>160 lbs</span>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>▸ LAST SEEN INFORMATION</h2>
+            <div class="info-row">
+                <span class="info-label">Date Last Seen:</span>
+                <span>March 8, 2026</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Location:</span>
+                <span>Chicago Heights, Illinois</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Clothing:</span>
+                <span>White shirt, black pants, red/black Jordans</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">View Location:</span>
+                <span><a href="https://www.google.com/maps/search/?api=1&query=Chicago+Heights+Illinois" target="_blank" style="color: #00ff00;">📍 Open in Google Maps</a></span>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>▸ CASE DETAILS</h2>
+            <div class="info-row">
+                <span class="info-label">NCMEC Case Number:</span>
+                <span>2079802</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">NCIC Number:</span>
+                <span>M708772389</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Days Missing:</span>
+                <span id="daysMissing">Calculating...</span>
+            </div>
+        </div>
+        
+        <div class="contact-box">
+            <h2>🚨 HAVE INFORMATION? CONTACT IMMEDIATELY:</h2>
+            <div class="info-row">
+                <span class="info-label">Police Department:</span>
+                <span>Chicago Heights Police Department</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Phone:</span>
+                <span><a href="tel:708-756-6400" style="color: #00ff00; font-size: 20px; font-weight: bold;">708-756-6400</a></span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Detective Stoterau:</span>
+                <span><a href="tel:708-756-6435" style="color: #00ff00; font-size: 20px; font-weight: bold;">708-756-6435</a></span>
+            </div>
+        </div>
+        
+        <div class="share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://n3xion3301.github.io/chance-anderson-barnes.html" target="_blank" class="share-btn">
+                SHARE ON FACEBOOK
+            </a>
+            <a href="https://twitter.com/intent/tweet?text=MISSING:%20Chance%20Anderson-Barnes,%2014,%20Chicago%20Heights,%20IL&url=https://n3xion3301.github.io/chance-anderson-barnes.html" target="_blank" class="share-btn">
+                SHARE ON TWITTER
+            </a>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px; color: #00ff00;">
+            <p>Sharing has led to one sighting. Keep sharing to reunite this family.</p>
+            <p><a href="index.html" style="color: #00ff00;">← Back to Main Page</a> | <a href="cases.html" style="color: #00ff00;">View All Cases →</a></p>
+        </div>
+    </div>
+    
+    <script>
+        // Calculate days missing
+        const lastSeen = new Date('2026-03-08');
+        const today = new Date();
+        const diffTime = Math.abs(today - lastSeen);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        document.getElementById('daysMissing').textContent = diffDays + ' days';
+    </script>
+</body>
+</html>
